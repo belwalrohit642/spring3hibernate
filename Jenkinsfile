@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        git branch: 'master', url: 'https://github.com/belwalrohit642/spring3hibernate.git'
+        //git branch: 'master', url: 'https://github.com/belwalrohit642/spring3hibernate.git'
       }
     }
     stage('Build and Test') {
