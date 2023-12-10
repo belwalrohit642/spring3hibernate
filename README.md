@@ -1,4 +1,4 @@
-# Spring3Hibernate - A OpsTree Sample Maven based Java Application
+# Spring3Hibernate 
 
 The main goal of this awesome Java Webapp is to encourage people to dive deep in Java Application Architecture and how we can make delivery pipeline faster, easier and much reliable using **Continous Integration**.
 
