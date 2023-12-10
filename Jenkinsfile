@@ -5,20 +5,13 @@ pipeline {
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
-  stages {
-    stage('CheckoutCleanUp') {
-    steps {
-        cleanWs()
-        checkout scm
-    }
-}
 
-    // stage('Checkout') {
-    //   steps {
-    //     sh 'echo passed'
-    //     //git branch: 'master', url: 'https://github.com/belwalrohit642/spring3hibernate.git'
-    //   }
-    // }
+    stage('Checkout') {
+      steps {
+        sh 'echo passed'
+        //git branch: 'master', url: 'https://github.com/belwalrohit642/spring3hibernate.git'
+      }
+    }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
